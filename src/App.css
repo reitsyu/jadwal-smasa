@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  background-color: #f4f6f9;
+  color: #1a1d20;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-title .icon {
+  font-size: 2.2rem;
+  color: #2563eb;
+}
+
+.header-title h1 {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1.8rem;
+  color: #0f172a;
+}
+
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+select {
+  padding: 0.6rem 1rem;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 0.95rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  background: white;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  background-color: #e2e8f0;
+  color: #334155;
+}
+
+.btn-secondary:hover {
+  background-color: #cbd5e1;
+}
+
+.status-msg {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.1rem;
+  color: #64748b;
+}
+
+.status-msg.error {
+  color: #dc2626;
+}
+
+.schedule-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 1rem;
+}
+
+.card-header h2 {
+  font-family: 'Source Serif 4', serif;
+  color: #1e293b;
+}
+
+.card-header h3 {
+  color: #2563eb;
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.day-column {
+  background-color: #f8fafc;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.day-header {
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.subjects-list {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.no-class {
+  text-align: center;
+  color: #94a3b8;
+  padding: 1rem;
+}
+
+.subject-box {
+  background: white;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border-left: 4px solid #2563eb;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.period-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: #64748b;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.mapel-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+.guru-name {
+  font-size: 0.85rem;
+  color: #475569;
+  margin-top: 0.2rem;
+}
+
+.ruang-tag {
+  font-size: 0.75rem;
+  background: #eff6ff;
+  color: #1d4ed8;
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  margin-top: 0.4rem;
+}
